@@ -4,25 +4,25 @@
 ## Tables and Attributes
 
 ### Authors
-- author_id: INT, Primary Key, Auto-increment
+- author_id: INT, Primary Key
 - author_name: VARCHAR(100), Not Null, Unique
 
 ### Books
-- book_id: INT, Primary Key, Auto-increment
+- book_id: INT, Primary Key
 - title: VARCHAR(255), Not Null
 - price: DECIMAL(10,3), Not Null
 - stock_available: INT, Not Null
 - published_date: DATE, Not Null
 
 ### Customers
-- customer_id: INT, Primary Key, Auto-increment
+- customer_id: INT, Primary Key
 - customer_name: VARCHAR(100), Not Null
 - email: VARCHAR(255), Not Null, Unique
 - phone_number: VARCHAR(15)
 - registration_date: DATETIME, Default CURRENT_TIMESTAMP
 
 ### Orders
-- order_id: INT, Primary Key, Auto-increment
+- order_id: INT, Primary Key
 - customer_id: INT, Foreign Key references `customers(customer_id)`
 - order_date: DATETIME, Default CURRENT_TIMESTAMP
 

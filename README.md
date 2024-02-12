@@ -30,7 +30,7 @@
 - order_id: INT, Foreign Key references `orders(order_id)`
 - book_id: INT, Foreign Key references `books(book_id)`
 - quantity: INT, Not Null
-- price: DECIMAL(10,2), Not Null
+- price: DECIMAL(10,3), Not Null
 - Composite Primary Key (`order_id`, `book_id`)
 
 ### Authors_Books

@@ -1,4 +1,4 @@
-
+Author - Sarthak Nigam
 # Bookstore Management System
 
 ## Tables and Attributes
